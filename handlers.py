@@ -53,7 +53,7 @@ async def help_command(message: types.Message):
         "This bot allows you to register for events. Use the buttons to navigate."
     )
 
-
+# Check if user is in Telegram group
 @command_handler("register")
 async def register_event(message: types.Message):
     from bot import bot
