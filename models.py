@@ -7,3 +7,4 @@ class User(Base):
     telegram_id = Column(Integer, unique=True, index=True)
     username = Column(String, nullable=True)
     is_registered = Column(Boolean, default=False)
+# models definition

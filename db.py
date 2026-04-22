@@ -11,3 +11,4 @@ SessionLocal = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 async def init_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+# database setup
