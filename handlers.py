@@ -28,7 +28,7 @@ def get_main_keyboard():
         resize_keyboard=True,
     )
 
-
+# Command handlers for bot logic
 @command_handler("start")
 async def start_command(message: types.Message):
     async with SessionLocal() as session:
