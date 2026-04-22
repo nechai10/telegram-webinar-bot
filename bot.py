@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from db import init_db
 from handlers import handle_message
 
-# Load environment variables
+# Main entry point of the Telegram bot
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
